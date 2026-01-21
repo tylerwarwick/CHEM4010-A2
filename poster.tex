@@ -31,12 +31,13 @@
 \setlength{\colwidth}{0.3\paperwidth}
 
 \newcommand{\separatorcolumn}{\begin{column}{\sepwidth}\end{column}}
+%\newcommand{\separatorcolumn}{\column{\sepwidth}}
 
 % ====================
 % Title
 % ====================
 
-\title{Ketamine RAAAAAAA}
+\title{Ketamine: Stereospecific Synthesis Required}
 
 \author{Tyler Warwick (1130124)}
 
@@ -75,15 +76,15 @@
 \addtobeamertemplate{headline}{}
 {
     \begin{tikzpicture}[remember picture,overlay]
-      \node [anchor=north west, inner sep=3cm] at ([xshift=0.0cm,yshift=3.0cm]current page.north west)
-     % {\includegraphics[height=6.5cm]{logo/Dr. Reed’s CHEM4010 Class.png}};
+      \node [anchor=north west, inner sep=3cm] at ([xshift=0.0cm,yshift=3.0cm]current page.north west) {};
+     %{\includegraphics[height=6.5cm]{logo/Rensselaer Large Logo CMYK-White.png}};
       
     \end{tikzpicture}
 }
 
 \begin{frame}[t]
 \begin{columns}[t]
-\separatorcolumn
+\separatorcolumn{
 
 \begin{column}{\colwidth}
 
@@ -95,8 +96,7 @@
       \centering
       \begin{tikzpicture}[scale=6]
         \draw[step=0.25cm,color=gray] (-1,-1) grid (1,1);
-        \draw (1,0) -- (0.2,0.2) -- (0,1) -- (-0.2,0.2) -- (-1,0)
-          -- (-0.2,-0.2) -- (0,-1) -- (0.2,-0.2) -- cycle;
+        \draw (1,0) -- (0.2,0.2) -- (0,1) -- (-0.2,0.2) -- (-1,0) -- (-0.2,-0.2) -- (0,-1) -- (0.2,-0.2) -- cycle;
       \end{tikzpicture}
       \caption{A figure caption.}
     \end{figure}
@@ -150,8 +150,8 @@
   \end{alertblock}
 
 \end{column}
-
-\separatorcolumn
+}
+\separatorcolumn{
 
 \begin{column}{\colwidth}
 
@@ -234,19 +234,16 @@
   \end{block}
 
 \end{column}
+}
 
-\separatorcolumn
+\separatorcolumn{
 
 \begin{column}{\colwidth}
 
   \begin{exampleblock}{A highlighted block containing some math}
 
     A different kind of highlighted block.
-
-    $$
-    \int_{-\infty}^{\infty} e^{-x^2}\,dx = \sqrt{\pi}
-    $$
-
+    
     Interdum et malesuada fames $\{1, 4, 9, \ldots\}$ ac ante ipsum primis in
     faucibus. Cras eleifend dolor eu nulla suscipit suscipit. Sed lobortis non
     felis id vulputate.
@@ -307,13 +304,13 @@
   \begin{block}{References}
 
     \nocite{*}
-    \footnotesize{\bibliographystyle{plain}\bibliography{poster}}
+    %\footnotesize{\bibliographystyle{plain}\bibliography{poster}}
 
   \end{block}
 
 \end{column}
-
-\separatorcolumn
+}
+%\separatorcolumn
 \end{columns}
 \end{frame}
 
