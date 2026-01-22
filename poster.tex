@@ -19,6 +19,7 @@
 \pgfplotsset{compat=1.14}
 \usepackage{anyfontsize}
 \usepackage{comment}
+\usepackage{wrapfig}
 % ====================
 % Lengths
 % ====================
@@ -82,12 +83,8 @@
     \end{tikzpicture}
 }
 
-\begin{frame}[t]
-\begin{columns}[t]
-\separatorcolumn{
-
-\begin{column}{\colwidth}
-
+\begin{comment}
+  Central image block (good for use later with enantiomer)
   \begin{block}{A block title}
 
     Some block contents, followed by a diagram, followed by a dummy paragraph.
@@ -106,6 +103,34 @@
     lobortis augue, ut lobortis turpis rhoncus sed. Proin feugiat nibh a
     lacinia dignissim. Proin scelerisque, risus eget tempor fermentum, ex
     turpis condimentum urna, quis malesuada sapien arcu eu purus.
+
+  \end{block}
+\end{comment}
+
+
+\begin{frame}[t]
+\begin{columns}[t]
+\separatorcolumn{
+
+\begin{column}{\colwidth}
+
+  \begin{block}{A block title}
+
+    \begin{wrapfigure}{r}{0pt} % width=0pt since we’ll control height
+      \centering
+      \includegraphics[height=6cm]{example-image} % replace with your graphic
+      \caption{A figure caption.}
+    \end{wrapfigure}
+
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ultricies
+    eget libero ac ullamcorper. Integer et euismod ante. Aenean vestibulum
+    lobortis augue, ut lobortis turpis rhoncus sed. Proin feugiat nibh a
+    lacinia dignissim. Proin scelerisque, risus eget tempor fermentum, ex
+    turpis condimentum urna, quis malesuada sapien arcu eu purus.
+
+    Curabitur vitae velit nec sapien malesuada tincidunt. Suspendisse potenti.
+    Donec nec risus et urna eleifend ultricies. Duis a metus eget lorem
+    pellentesque fermentum.
 
   \end{block}
 
