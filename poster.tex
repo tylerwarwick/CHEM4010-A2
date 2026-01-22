@@ -19,7 +19,9 @@
 \pgfplotsset{compat=1.14}
 \usepackage{anyfontsize}
 \usepackage{comment}
-\usepackage{wrapfig}
+%\usepackage{wrapfig}
+\usepackage{caption}  % needed for \captionof outside floats
+
 % ====================
 % Lengths
 % ====================
@@ -33,6 +35,11 @@
 
 \newcommand{\separatorcolumn}{\begin{column}{\sepwidth}\end{column}}
 %\newcommand{\separatorcolumn}{\column{\sepwidth}}
+
+
+% Wrapfig padding
+%\setlength{\intextsep}{1em}   % vertical space above & below the figure
+\setlength{\columnsep}{1em}   % horizontal space between figure & text
 
 % ====================
 % Title
@@ -74,6 +81,8 @@
 
 % Refer to https://github.com/k4rtik/uchicago-poster
 % logo: https://www.cam.ac.uk/brand-resources/about-the-logo/logo-downloads
+
+\begin{comment}
 \addtobeamertemplate{headline}{}
 {
     \begin{tikzpicture}[remember picture,overlay]
@@ -82,6 +91,7 @@
       
     \end{tikzpicture}
 }
+\end{comment}
 
 \begin{comment}
   Central image block (good for use later with enantiomer)
@@ -105,20 +115,11 @@
     turpis condimentum urna, quis malesuada sapien arcu eu purus.
 
   \end{block}
-\end{comment}
 
-
-\begin{frame}[t]
-\begin{columns}[t]
-\separatorcolumn{
-
-\begin{column}{\colwidth}
-
-  \begin{block}{A block title}
-
-    \begin{wrapfigure}{r}{0pt} % width=0pt since we’ll control height
+  WRAPFIG OPTION - sketchy
+   \begin{wrapfigure}{r}{0pt} % width=0pt since we’ll control height
       \centering
-      \includegraphics[height=6cm]{example-image} % replace with your graphic
+      \includegraphics[height=0.20\linewidth]{example-image} % replace with your graphic
       \caption{A figure caption.}
     \end{wrapfigure}
 
@@ -131,6 +132,35 @@
     Curabitur vitae velit nec sapien malesuada tincidunt. Suspendisse potenti.
     Donec nec risus et urna eleifend ultricies. Duis a metus eget lorem
     pellentesque fermentum.
+
+\end{comment}
+
+
+\begin{frame}[t]
+\begin{columns}[t]
+\separatorcolumn{
+
+\begin{column}{\colwidth}
+
+  \begin{block}{A block title}
+    \begin{minipage}[t]{0.6\textwidth}  % left side: text
+      Some block contents, followed by a paragraph of text.
+
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ultricies
+      eget libero ac ullamcorper. Integer et euismod ante. Aenean vestibulum
+      lobortis augue, ut lobortis turpis rhoncus sed. Proin feugiat nibh a
+      lacinia dignissim. Proin scelerisque, risus eget tempor fermentum, ex
+      turpis condimentum urna, quis malesuada sapien arcu eu purus.
+
+      More text can go here and will naturally flow below the figure as well.
+    \end{minipage}
+    \hfill
+    \begin{minipage}[t]{0.35\textwidth}  % right side: figure
+      %\centering
+      \vspace{0pt}  % optional: pull the figure up a bit to align with text
+      \includegraphics[width=\linewidth]{media/ket-structure.jpg}  % specify height, not width
+      \captionof{figure}{A figure caption.}       % caption without float
+    \end{minipage}
 
   \end{block}
 
