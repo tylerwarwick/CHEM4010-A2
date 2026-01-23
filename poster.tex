@@ -21,6 +21,8 @@
 \usepackage{comment}
 %\usepackage{wrapfig}
 \usepackage{caption}  % needed for \captionof outside floats
+\usepackage[super]{natbib}  % superscript numbers like ACS
+\bibliographystyle{achemso}  % ACS-approved style
 
 % ====================
 % Lengths
@@ -159,7 +161,7 @@
       %\centering
       \vspace{0pt}  % optional: pull the figure up a bit to align with text
       \includegraphics[width=\linewidth]{media/ket-structure.jpg}  % specify height, not width
-      \captionof{figure}{A figure caption.}       % caption without float
+      \captionof{figure}{Ketamine structure. [YART]}       % caption without float
     \end{minipage}
 
   \end{block}
