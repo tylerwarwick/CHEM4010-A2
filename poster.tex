@@ -78,6 +78,25 @@
 
 % Blocks I am retaining
 \begin{comment}
+  \begin{block}{Nullam vel erat at velit convallis laoreet}
+
+    Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
+    inceptos himenaeos. Phasellus libero enim, gravida sed erat sit amet,
+    scelerisque congue diam. Fusce dapibus dui ut augue pulvinar iaculis.
+
+    \begin{table}
+      \centering
+      \begin{tabular}{c c c c c c}
+        \toprule
+        \textbf{Compound} & \textbf{Form} & \textbf{Price Metric} & \textbf{Price Per Application} & \textbf{Weekly Cost} & \textbf{Notes}\\
+        \midrule
+        Racemic Ketamine & IV Vial (50 mg/mL) & 0.12C per mg & \textemdash& \textemdash& Cost of API only \\
+        Racemic Ketamine & IV Vial (50 mg/mL) & 0.12C per mg & \textemdash& \textemdash& Cost of API only \\
+        \bottomrule
+      \end{tabular}
+      \caption{A table caption.}
+    \end{table}
+  \end{block}
   \begin{alertblock}{A highlighted block}
 
     This block catches your eye, so \textbf{important stuff} should probably go
@@ -304,7 +323,17 @@
     
 
   \end{block}
-    
+
+  \begin{block}{Mechanism of Action}
+
+    \begin{center}
+      \includegraphics[width=\linewidth]{media/mechanisOfAction.jpg}  
+      %\includegraphics[width=0.7\linewidth]{media/ket-enantiomers.jpg}
+      \captionof{figure}{Need to come up with a coherent caption to describe this busy diagram}
+    \end{center}
+
+
+  \end{block}
   
 \end{column}
 }
@@ -337,26 +366,7 @@
 
   \end{exampleblock}
 
-  \begin{block}{Nullam vel erat at velit convallis laoreet}
-
-    Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
-    inceptos himenaeos. Phasellus libero enim, gravida sed erat sit amet,
-    scelerisque congue diam. Fusce dapibus dui ut augue pulvinar iaculis.
-
-    \begin{table}
-      \centering
-      \begin{tabular}{l r r c}
-        \toprule
-        \textbf{First column} & \textbf{Second column} & \textbf{Third column} & \textbf{Fourth} \\
-        \midrule
-        Foo & 13.37 & 384,394 & $\alpha$ \\
-        Bar & 2.17 & 1,392 & $\beta$ \\
-        Baz & 3.14 & 83,742 & $\delta$ \\
-        Qux & 7.59 & 974 & $\gamma$ \\
-        \bottomrule
-      \end{tabular}
-      \caption{A table caption.}
-    \end{table}
+  
 
     Donec quis posuere ligula. Nunc feugiat elit a mi malesuada consequat. Sed
     imperdiet augue ac nibh aliquet tristique. Aenean eu tortor vulputate,
@@ -372,7 +382,7 @@
     in feugat elit lorem euismod lacus. Pellentesque sit amet dolor mollis,
     auctor urna non, tempus sem.
 
-  \end{block}
+  
 
   \begin{block}{References}
     %\nocite{*}
