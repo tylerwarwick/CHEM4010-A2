@@ -20,10 +20,13 @@
 \pgfplotsset{compat=1.14}
 \usepackage{anyfontsize}
 \usepackage{comment}
+\usepackage{array}
 %\usepackage{wrapfig}
 \usepackage{caption}  % needed for \captionof outside floats
 \usepackage[super]{natbib}  % superscript numbers like ACS
 \bibliographystyle{achemso}  % ACS-approved style
+
+
 
 % ====================
 % Lengths
@@ -391,7 +394,7 @@
         effect is responsible for ketamine's antidepressant effects, as new neural connections can be formed in order 
         to erode old harmful habits. Additionally, entantiomeric forms and their downstream metabollites have also been
         reported to add to these effects via inhibition of pre-synaptic  metabotropic glutamate (mGlu2) autoreceptors and direct inhibition and 
-        activation of post-synaptic NMDA and AMPA receptors, respectively\cite{jelenlukea_2020_ketaminesy}. Although further research must be done to fully 
+        activation of post-synaptic NMDA and AMPA receptors, respectively\cite{jelenlukea_2020_ketamine}. Although further research must be done to fully 
         illucidate the specific role that each unique metabolite plays. Schematic adapted from\cite{jelenlukea_2020_ketamine}}
     \end{center}
 
@@ -407,7 +410,29 @@
       
     \end{block}
     \begin{block}{Production Cost}
-      
+      \begin{table}[ht]
+        \centering
+        \caption{Cost Comparison of Treatments for Treatment-Resistant Major Depressive Disorder}
+        %\label{tab:trd_costs}
+        \begin{tabular}{p{4cm} p{5cm} p{8cm} p{6cm} p{5.5cm}}
+          %\hline
+          \textbf{Drug} & \textbf{Dose} & \textbf{Administration Method} & \textbf{Price} & \textbf{Price Per Week} \\
+          %\hline
+          Esketamine (Spravato) 
+          & 56--84mg per session 
+          & Intranasal spray (supervised clinic) 
+          & \$273 per 28 mg spray 
+          & \$273--\$1638 \\
+\\
+          Ketamine (generic) 
+          & 0.5 mg/kg 
+          & Intravenous infusion (40 min) 
+          & \$1.65--\$5.20 per vial 
+          & \$5--\$16 (drug cost only) \\
+          %\hline
+        \end{tabular}
+      \end{table}
+
     \end{block}
     
     \begin{block}{References}
