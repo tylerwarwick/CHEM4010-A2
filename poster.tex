@@ -409,27 +409,39 @@
     \begin{block}{Efficacy}
       
     \end{block}
-    \begin{block}{Production Cost}
+    \begin{block}{Regulatory Capture as a Driver of Drug Price Inflation}
       \begin{table}[ht]
         \centering
-        \caption{Cost Comparison of Treatments for Treatment-Resistant Major Depressive Disorder}
+        \renewcommand{\arraystretch}{1.5} % increase row height
+        \caption{Comparison of per-dose costs for generic ketamine and esketamine (Spravato) 
+        in treatment-resistant major depressive disorder. Generic ketamine costs reflect drug 
+        acquisition only and exclude administration, supervision, and facility fees, whereas esketamine 
+        costs reflect the list price of the commercial nasal spray. The large disparity in per-dose costs
+        highlights the impact of differential regulatory and reimbursement pathways on pricing.}
         %\label{tab:trd_costs}
-        \begin{tabular}{p{4cm} p{5cm} p{8cm} p{6cm} p{5.5cm}}
-          %\hline
-          \textbf{Drug} & \textbf{Dose} & \textbf{Administration Method} & \textbf{Price} & \textbf{Price Per Week} \\
-          %\hline
-          Esketamine (Spravato) 
-          & 56--84mg per session 
-          & Intranasal spray (supervised clinic) 
-          & \$273 per 28 mg spray 
-          & \$273--\$1638 \\
-\\
-          Ketamine (generic) 
+        \begin{tabular}{
+              >{\centering\arraybackslash}p{7cm}   % Drug
+              >{\centering\arraybackslash}p{5cm} % Dose
+              >{\centering\arraybackslash}p{8cm}   % Administration
+              >{\centering\arraybackslash}p{8cm} % Price
+              %>{\centering\arraybackslash}p{2.5cm} % Price per week
+              %>{\centering\arraybackslash}p{2.5cm} % Price per year
+          }
+          \hline
+          \textbf{Drug} & \textbf{Effective Dose} & \textbf{Drug Acquisition Cost (per dose)} & \textbf{Administration Method}  \\%& \textbf{Price Per Week} \\
+          \hline
+           Ketamine (generic) 
           & 0.5 mg/kg 
-          & Intravenous infusion (40 min) 
-          & \$1.65--\$5.20 per vial 
-          & \$5--\$16 (drug cost only) \\
-          %\hline
+          & \$3.64--\$5.75
+          & Intravenous infusion \\
+          %& \$5--\$16 (drug cost only) \\
+            %\\ %line seperator
+          Esketamine (Spravato) 
+          & 56--84 mg %per session 
+          & \$546--\$819
+          & Intranasal spray \\
+          %& \$273--\$1638 \\
+          \hline
         \end{tabular}
       \end{table}
 
