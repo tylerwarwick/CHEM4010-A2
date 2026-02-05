@@ -21,6 +21,7 @@
 \usepackage{anyfontsize}
 \usepackage{comment}
 \usepackage{array}
+\usepackage{threeparttable}
 %\usepackage{wrapfig}
 \usepackage{caption}  % needed for \captionof outside floats
 \usepackage[super]{natbib}  % superscript numbers like ACS
@@ -51,7 +52,7 @@
 % Title
 % ====================
 
-\title{Ketamine as an Antidepressant: Why Stereospecific Synthesis Matters}
+\title{Ketamine as an Antidepressant: Does Stereospecific Synthesis Matter?}
 
 \author{Tyler Warwick (1130124)}
 
@@ -407,43 +408,60 @@
 \separatorcolumn{
   \begin{column}{\colwidth}
     \begin{block}{Efficacy}
-      
+      Ketamine's primary antidepressant utility lies in its rapid onset, a critical property for patients experiencing 
+      acute suicidal ideation\cite{boudieu_2023_the}. This effect is mediated through increased synaptogenesis, driven by NMDA 
+      receptor inhibition, glutamate surge, and AMPA receptor activation (see Figure 5). Consensus regarding ketamine's 
+      role in long-term maintenance of depression remains unclear. Most research suggests that its effects are primarily acute, 
+      with limited evidence for sustained benefit beyond 2--3 weeks\cite{kryst_2020_efficacy}\cite{BahjiAnees2022Easo}. Some meta-analyses indicate that 
+      repeated intranasal administration may support longer-lasting antidepressant effects, likely due to improved bioavailability 
+      and patient adherence compared with intravenous dosing\cite{boudieu_2023_the}. Conversely, other studies have reported that 
+      intravenous delivery can be more effective, as it allows for weight-adjusted dosing (see Table 2)\cite{BahjiAnees2022Easo}.
+
+      More broadly, while ketamine's rapid antidepressant effects can be life-saving in acute situations, long-term management
+      generally requires integration with additional interventions, such as psychotherapy or conventional antidepressants\cite{boudieu_2023_the}. 
+      The potential differences in efficacy between administration methods also complicate the evaluation of 
+      whether racemic ketamine or its enantiomerically pure forms are superior. Esketamine, with its higher NMDA receptor 
+      affinity, enables effective intranasal delivery at lower doses (see Table 1)\cite{jelenlukea_2020_ketamine}. Early research suggests that 
+      arketamine may primarily drive the antidepressant response, whereas esketamine may contribute more to dissociative side 
+      effects. This uncertainty regarding which enantiomer or a downstream metabolite is responsible for specific pharmacological
+      effects highlights the need for further studies to confirm these observations\cite{jelenlukea_2020_ketamine}.
+
     \end{block}
     \begin{block}{Regulatory Capture as a Driver of Drug Price Inflation}
+      Direct price comparisons between generic ketamine and esketamine (Spravato\textsuperscript{\textregistered}) 
+      are challenging, as generic ketamine costs reflect drug acquisition only and 
+      exclude administration, supervision, and facility fees, whereas esketamine is 
+      delivered as a commercially available, self-administered intranasal formulation.
+      Nevertheless, the substantial disparity in cost per effective dose highlights the
+      influence of differential regulatory and reimbursement pathways on pricing.
       \begin{table}[ht]
         \centering
-        \renewcommand{\arraystretch}{1.5} % increase row height
+        \renewcommand{\arraystretch}{1.5}
         \caption{Comparison of per-dose costs for generic ketamine and esketamine (Spravato) 
-        in treatment-resistant major depressive disorder. Generic ketamine costs reflect drug 
-        acquisition only and exclude administration, supervision, and facility fees, whereas esketamine 
-        costs reflect the list price of the commercial nasal spray. The large disparity in per-dose costs
-        highlights the impact of differential regulatory and reimbursement pathways on pricing.}
-        %\label{tab:trd_costs}
-        \begin{tabular}{
-              >{\centering\arraybackslash}p{7cm}   % Drug
-              >{\centering\arraybackslash}p{5cm} % Dose
-              >{\centering\arraybackslash}p{8cm}   % Administration
-              >{\centering\arraybackslash}p{8cm} % Price
-              %>{\centering\arraybackslash}p{2.5cm} % Price per week
-              %>{\centering\arraybackslash}p{2.5cm} % Price per year
+        in treatment-resistant major depressive disorder.}
+        \begin{threeparttable}
+          \begin{tabular}{
+          >{\centering\arraybackslash}p{7cm}
+          >{\centering\arraybackslash}p{5cm}
+          >{\centering\arraybackslash}p{8cm}
+          >{\centering\arraybackslash}p{8cm}
           }
           \hline
-          \textbf{Drug} & \textbf{Effective Dose} & \textbf{Drug Acquisition Cost (per dose)} & \textbf{Administration Method}  \\%& \textbf{Price Per Week} \\
+          \textbf{Drug} & \textbf{Effective Dose} & \textbf{Acquisition Cost (per dose)} & \textbf{Administration Method} \\
           \hline
-           Ketamine (generic) 
-          & 0.5 mg/kg 
-          & \$3.64--\$5.75
-          & Intravenous infusion \\
-          %& \$5--\$16 (drug cost only) \\
-            %\\ %line seperator
-          Esketamine (Spravato) 
-          & 56--84 mg %per session 
-          & \$546--\$819
-          & Intranasal spray \\
-          %& \$273--\$1638 \\
+          Ketamine (generic)\tnote{a} & 0.5 mg/kg & \$3.64--\$5.75 & Intravenous infusion \\
+          Esketamine (Spravato\textsuperscript{\textregistered}) & 56--84 mg & \$546--\$819 & Intranasal spray \\
           \hline
-        \end{tabular}
+          \end{tabular}
+          \begin{tablenotes}
+            \footnotesize
+            \item[a] Acquisition costs assume a 70~kg adult (35~mg dose). Cost ranges reflect 
+            variation in purchasing prices and vial sizes, including partial vial use and 
+            bulk purchasing.
+          \end{tablenotes}
+        \end{threeparttable}
       \end{table}
+
 
     \end{block}
     
