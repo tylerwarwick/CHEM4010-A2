@@ -10,7 +10,7 @@
 \usepackage[T1]{fontenc}
 \usepackage{lmodern}
 % Come back and adjust to height of 72
-\usepackage[size=custom,width=120,height=120,scale=1.0]{beamerposter}
+\usepackage[size=custom,width=120,height=72,scale=1.0]{beamerposter}
 \usetheme{gemini}
 \usecolortheme{rpi}
 \usepackage{graphicx}
@@ -245,6 +245,10 @@
 
 \end{comment}
 
+\begin{comment}
+      
+\end{comment}
+
 % ====================
 % Body
 % ====================
@@ -322,7 +326,7 @@
     was developed in 1962 in hopes of retaining PCP's abilities as a CNS depressant without the harsh side effects\cite{ivy_2012_designer}. 
 
     \begin{center}
-      \includegraphics[width=0.7\linewidth]{media/aryl-better.png}
+      \includegraphics[width=0.6\linewidth]{media/aryl-better.png}
       %\includegraphics[width=0.7\linewidth]{media/ket-enantiomers.jpg} 
       \captionof{figure}{Ketamine structure.\cite{kassin_2019_expedient}} 
     \end{center}
@@ -342,17 +346,24 @@
     as separate pharmaceutical entities, which has necessitated the development of distinct synthesis and manufacturing 
     processes\cite{jelenlukea_2020_ketamine}\cite{chen_2019_enantioselective}. 
   \end{block}
-  \begin{block}{Metabolism}
+
+  \begin{block}{Mechanism of Action}
 
     \begin{center}
-      \includegraphics[width=\linewidth]{media/metabollites.png}  
-      
-      \captionof{figure}{Both ketamine enatniomers undergo rapid and extensive metabolism by cytochrome P450 enzymes in the liver.
-       This diagram shows the major ketamine metabolites and corresponding liver enzymes that have been reported to contribute to 
-       the pharmological activity profile of ketamine.\cite{jelenlukea_2020_ketamine}\cite{dinisoliveira_2017_metabolism} Schematic adapted from\cite{jelenlukea_2020_ketamine}}
+      \includegraphics[width=0.8\linewidth]{media/mech-combined.png}  
+      %\includegraphics[width=0.7\linewidth]{media/ket-enantiomers.jpg}
+      % Mechanism of action for enantiomeric ketamine and its downstream metabollites
+      \captionof{figure}{Ketamine's main mechanim of action. This is mainly a result of it's role as an uncompetitve NMDA inhibitor. 
+      This inhbits the release of the inhibitory neurotransmitter GABA, resulting in increased glutamate release
+       (also known as a glutamate surge). Glutamate then binds AMPA receptors on the post-synaptic neuron, leading to
+        a signalling event that results in increased neural connections being formed (synaptogenesis). This particular 
+        effect is responsible for ketamine's antidepressant effects, as new neural connections can be formed in order 
+        to erode old harmful habits. Additionally, entantiomeric forms and their downstream metabollites have also been
+        reported to add to these effects via inhibition of pre-synaptic  metabotropic glutamate (mGlu2) autoreceptors and direct inhibition and 
+        activation of post-synaptic NMDA and AMPA receptors, respectively\cite{jelenlukea_2020_ketamine}. Although further research must be done to fully 
+        illucidate the specific role that each unique metabolite plays. Schematic adapted from\cite{jelenlukea_2020_ketamine}}
     \end{center}
 
-   
 
   \end{block}
 
@@ -381,26 +392,20 @@
     
 
   \end{block}
-
-  \begin{block}{Mechanism of Action}
+  \begin{block}{Metabolism}
 
     \begin{center}
-      \includegraphics[width=0.8\linewidth]{media/mech-combined.png}  
-      %\includegraphics[width=0.7\linewidth]{media/ket-enantiomers.jpg}
-      % Mechanism of action for enantiomeric ketamine and its downstream metabollites
-      \captionof{figure}{Ketamine's main mechanim of action. This is mainly a result of it's role as an uncompetitve NMDA inhibitor. 
-      This inhbits the release of the inhibitory neurotransmitter GABA, resulting in increased glutamate release
-       (also known as a glutamate surge). Glutamate then binds AMPA receptors on the post-synaptic neuron, leading to
-        a signalling event that results in increased neural connections being formed (synaptogenesis). This particular 
-        effect is responsible for ketamine's antidepressant effects, as new neural connections can be formed in order 
-        to erode old harmful habits. Additionally, entantiomeric forms and their downstream metabollites have also been
-        reported to add to these effects via inhibition of pre-synaptic  metabotropic glutamate (mGlu2) autoreceptors and direct inhibition and 
-        activation of post-synaptic NMDA and AMPA receptors, respectively\cite{jelenlukea_2020_ketamine}. Although further research must be done to fully 
-        illucidate the specific role that each unique metabolite plays. Schematic adapted from\cite{jelenlukea_2020_ketamine}}
+      \includegraphics[width=\linewidth]{media/metabollites.png}  
+      
+      \captionof{figure}{Both ketamine enatniomers undergo rapid and extensive metabolism by cytochrome P450 enzymes in the liver.
+       This diagram shows the major ketamine metabolites and corresponding liver enzymes that have been reported to contribute to 
+       the pharmological activity profile of ketamine.\cite{jelenlukea_2020_ketamine}\cite{dinisoliveira_2017_metabolism} Schematic adapted from\cite{jelenlukea_2020_ketamine}}
     \end{center}
 
+   
 
   \end{block}
+  
   
 \end{column}
 }
@@ -484,11 +489,26 @@
 
     \end{block}
     
-    \begin{block}{References}
-      \nocite{*}
+    \begin{block}{Implications and Future Directions}
+      Ketamine demonstrates clear potential as a rapid-acting antidepressant, 
+      particularly in acute and treatment-resistant contexts. However, its precise 
+      role in long-term depression management remains unresolved, with ongoing uncertainty 
+      regarding optimal enantiomeric composition, delivery method, and the contribution of 
+      downstream metabolites. Clarifying these factors and aligning regulatory frameworks 
+      accordingly will be essential to reducing barriers to access and enabling cost-effective, 
+      evidence-based use.
+
+      % Hidden bibliography for in text citation numbers
+      % Will attach references seperately
+      %\nocite{*}
       \footnotesize
+      %\scriptsize
+      %\tiny
+      \vspace*{100cm}
+      %\setlength{\bibsep}{1pt}  % reduces spacing between references
       \bibliography{References}
     \end{block}
+    
     
 \end{column}
 }
@@ -497,3 +517,5 @@
 \end{frame}
 
 \end{document}
+
+
