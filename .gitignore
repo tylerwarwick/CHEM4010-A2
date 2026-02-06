@@ -18,7 +18,7 @@
 *.dvi
 
 # PDF output
-*.pdf
+#*.pdf
 
 # Temporary or backup files
 *~
